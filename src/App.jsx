@@ -9,7 +9,7 @@ function App() {
 
     return (
         <>
-            <h1>Barcode Scanner</h1>
+            <h3>Barcode Scanner</h3>
             <BarcodeScanner />
         </>
     );

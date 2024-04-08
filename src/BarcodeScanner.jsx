@@ -21,7 +21,7 @@ const BarcodeScanner = () => {
         <div>
             <video ref={videoRef} id="video" width="300" height="200"></video>
             <button onClick={startScanner}>Start Scanner</button>
-            {resultMessage != "" && <h1>{resultMessage}</h1>}
+            {resultMessage != "" && <h3>{resultMessage}</h3>}
         </div>
     );
 };
