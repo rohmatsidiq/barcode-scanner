@@ -12,12 +12,14 @@ const BarcodeScanner = () => {
             .then((result) => {
                 console.log("Found barcode: ", result.text);
                 showAlert(result.text);
+                // Lakukan sesuatu dengan hasil pemindaian di sini
             })
             .catch((err) => console.error("Error: ", err));
     };
 
     const showAlert = (text) => {
         setResultMessage(text);
+        startScanner();
     };
 
     return (
