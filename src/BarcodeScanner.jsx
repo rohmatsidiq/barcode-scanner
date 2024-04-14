@@ -11,10 +11,15 @@ const BarcodeScanner = () => {
             .decodeFromInputVideoDevice(undefined, "video")
             .then((result) => {
                 console.log("Found barcode: ", result.text);
-                setResultMessage(result.text);
+                // setResultMessage(result.text);
+                showAlert(result);
                 // Lakukan sesuatu dengan hasil pemindaian di sini
             })
             .catch((err) => console.error("Error: ", err));
+    };
+
+    const showAlert = (text) => {
+        alert(text);
     };
 
     return (
