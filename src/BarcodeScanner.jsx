@@ -19,7 +19,7 @@ const BarcodeScanner = () => {
     };
 
     const showAlert = (text) => {
-        alert(text);
+        setResultMessage(text);
     };
 
     return (
